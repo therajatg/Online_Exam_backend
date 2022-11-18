@@ -8,7 +8,5 @@ urlpatterns = [
     path('student-update/',views.StudentUpdateAPI.as_view()),
     path('student-view/',views.StudentViewAPI.as_view()),
     path('student-logout/',views.LogoutAPI.as_view()),
-    # path('students/<int:pk>/', views.StudentDetail.as_view()),
-    # path('students/', views.StudentList.as_view()),
-
+    path('student-disable/',views.DisableStudentAPI.as_view()),
 ]

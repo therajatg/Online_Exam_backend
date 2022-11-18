@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     
     'rest_framework',
     'corsheaders',
-    'rest_framework_simplejwt',
     'student.apps.StudentConfig',
     'staff.apps.StaffConfig',
     'course.apps.CourseConfig',

@@ -108,38 +108,8 @@ class StaffUpdateAPI(APIView):
             return Response(serializer.data)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
 
-        # user = User.objects.get(id=payload['id'])
-        # user = User.objects
-        # serializer = UserSerializer(user,data=request.data)
-
-        # user_id = User.objects.get(id=payload['id'])
-
-        # # Update method, 
-        # user = User(id=user_id,
-        # first_name = request.data["first_name"],
-        # last_name = request.data["last_name"],
-        # username = request.data["username"],
-        # email = request.data["email"],
-        #     )
-
-        # user.set_password(request.data['new_password'])
-        if serializer.is_valid():
-            serializer.save()
-            return Response(
-                {
-                    'message':"Staff updated successfully",
-                    'status':status.HTTP_200_OK
-                    }
-            )
-
-        # except:
-        #     return Response(
-        #         {
-        #             'message':"Some error occured",
-        #             'status':status.HTTP_400_BAD_REQUEST
-        #             }
-        #     )
 
 class StaffViewAPI(APIView):
     """Retrieve, update or delete a staff instance."""
