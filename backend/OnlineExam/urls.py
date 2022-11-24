@@ -21,6 +21,5 @@ urlpatterns = [
     path('api/',include('student.urls')),
     path('api/',include('staff.urls')),
     path('api/',include('course.urls')),
-    path('',TemplateView.as_view(template_name='index.html'))
 
 ]
